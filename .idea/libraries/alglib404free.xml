@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="alglib404free">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ext_libs/alglib/alglib404free.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

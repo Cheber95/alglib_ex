@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="alglib_ex:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/alglib_ex_jar</output-path>
+    <root id="root">
+      <element id="archive" name="alglib_ex.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/resources/main/java/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="alglib_ex" />
+      </element>
+    </root>
+  </artifact>
+</component>

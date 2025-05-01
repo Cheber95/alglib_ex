@@ -1,0 +1,13 @@
+jdeps --ignore-missing-deps --generate-module-info javafx-sdk-17.0.10/lib/jars javafx-sdk-17.0.10/lib/javafx-swt.jar
+javac --patch-module javafx.swt=javafx-sdk-17.0.10/lib/javafx-swt.jar javafx-sdk-17.0.10/lib/jars/javafx.swt/module-info.java
+jar uf javafx-sdk-17.0.10/lib/javafx-swt.jar -C javafx-sdk-17.0.10/lib/ module-info.class
+
+jdeps --ignore-missing-deps --generate-module-info jars jars/jtransforms-2.4.0.jar
+ -- Скопировать module-info.java из новой папки в папку, где находится сам .jar. Сам .jar перенести в новую папку
+javac --patch-module jtransforms=jars/jtransforms/jtransforms-2.4.0.jar jars/module-info.java
+ -- убедиться, что появился module-info.class. Родить обратно .jar 
+jar uf jars/jtransforms-2.4.0.jar -C jars module-info.class
+
+jdeps --ignore-missing-deps --generate-module-info alglib alglib/alglib404free.jar
+javac --patch-module alglib404free=alglib/alglib404free/alglib404free.jar alglib/module-info.java
+jar uf alglib/alglib404free.jar -C alglib module-info.class
